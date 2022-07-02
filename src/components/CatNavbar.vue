@@ -1,14 +1,13 @@
 <template>
   <nav>
-    <label for="switch"><img src="../assets/nav.jpg" /></label>
-    <input type="checkbox" id="switch" />
-    <ul class="menu">
+    <div class="navbar">
+      <a href="javascript:history.back()" class="back"
+        ><i class="fa-solid fa-angle-left mx-4 text-light"></i
+      ></a>
+    </div>
+    <!-- <ul class="menu">
       <li><a href="##">Home</a></li>
-      <li><a href="##">About</a></li>
-      <li><a href="##">Graphy</a></li>
-      <li><a href="##">Intro</a></li>
-      <li><router-link to="/map">Map</router-link></li>
-    </ul>
+    </ul> -->
   </nav>
 </template>
 
@@ -41,6 +40,7 @@ a {
 nav {
   background: rgb(246, 146, 70);
   box-shadow: 0px 1px 3px #00000088;
+  height: 50px;
 }
 nav::after {
   content: "";
@@ -51,6 +51,12 @@ nav h1 {
   float: left;
   padding-left: 50px;
   line-height: 50px;
+}
+.navbar {
+  display: flex;
+}
+a.back {
+  text-align: center;
 }
 
 /* 隱藏 checkbox */
